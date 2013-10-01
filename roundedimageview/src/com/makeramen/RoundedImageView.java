@@ -1,5 +1,6 @@
 package com.makeramen;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -180,8 +181,8 @@ public class RoundedImageView extends ImageView {
         super.setImageDrawable(mDrawable);
     }
 
-    @Override
-    public void setBackground(Drawable background) {
+    @SuppressLint("Override")
+	public void setBackground(Drawable background) {
         setBackgroundDrawable(background);
     }
 
